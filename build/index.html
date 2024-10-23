@@ -133,7 +133,7 @@
 
       <hr class="mx-auto bg-black dark:bg-white w-1/2" />
 
-      <section id="testimonials" class="p-6 my-12">
+      <section id="testimonials" class="p-6 my-12 scroll-mt-12">
         <h2
           class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white"
         >
@@ -145,7 +145,7 @@
             class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative"
           >
             <p
-              class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-16 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:translate-x-2 after:translate-y-2"
+              class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-16 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
             >
               Acme has always been there for me. Their Explorer rocket arrived
               in a wooden crate as expected. Life-long customer! A++ shopping
@@ -164,7 +164,7 @@
             class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative"
           >
             <p
-              class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-16 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:translate-x-2 after:translate-y-2"
+              class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-16 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
             >
               The Acme Adventurer Rocket has thwarted my Illudium Q-36 Explosive
               Space Modulator on several occasions.
@@ -186,7 +186,7 @@
             class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative"
           >
             <p
-              class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-16 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:translate-x-2 after:translate-y-2"
+              class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-16 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
             >
               I knew I not only wanted &#8212;
               <span class="italic">I needed</span> &#8212; Acme's Infinity
@@ -205,12 +205,28 @@
 
       <hr class="mx-auto bg-black dark:bg-white w-1/2" />
 
-      <section id="contact" class="p-6 my-12">
+      <section id="contact" class="p-6 my-12 scroll-mt-16">
         <h2
           class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white"
         >
           Contact Us
         </h2>
+        <form
+          action=""
+          class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4"
+        >
+          <label for="subject">Subject:</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            minlength="3"
+            maxlength="60"
+            placeholder="Your Subject"
+            class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"
+          />
+        </form>
       </section>
     </main>
   </body>
