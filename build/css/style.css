@@ -1061,6 +1061,20 @@ video {
   }
 }
 
+@media (min-aspect-ratio: 3/2) {
+  .widescreen\:section-min-height {
+    min-height: calc(100vh - 68px);
+    /* we subtract full page - header (line height + padding */
+  }
+}
+
+@media (min-aspect-ratio: 1/2) {
+  .tallscreen\:section-min-height {
+    min-height: calc(100vh - 68px);
+    /* we subtract full page - header (line height + padding */
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   .dark\:border-none {
     border-style: none;
