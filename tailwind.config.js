@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./build/*.html"],
+  content: ["./build/*.html","./build/js/*.js"], 
   theme: {
     extend: {
       screens: {
@@ -21,3 +21,4 @@ module.exports = {
   },
   plugins: [],
 };
+/* if there is a class that is not applied in the html at the beginning but will be applied later with js we must add that js to the content section. In our case we apply flex to the html via JS*/
